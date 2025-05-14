@@ -1,0 +1,17 @@
+meta {
+  name: Shipping calculate
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/shipping/calculate?type=standart&distance=5&weight=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  type: standart
+  distance: 5
+  weight: 2
+}
